@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MENGAMBIL FILE JS -->
+    <script src="part4.js"></script>
+</head>
+
+    <p class="paragraf" id="paragraf">
+        {} DOM {} <br>
+        DOM adalah singkatan dari Document Object Model. 
+        DOM JavaScript adalah interface yang memungkinkan developer memanipulasi halaman web dari segi struktur, tampilan, dan kontennya
+    </p>
+    <p class="paragrafdua" id="paragrafdua">
+        - mengubah element html dan properti propertinya beserta css<br>
+        Apa saja yang bisa kita ubah dengan javascript? : <br>
+
+        1. document.getElementById().innerHTML (mengubah konten dari elemen html) <br>
+        2. document.getElementById().attribute (mengubah attribute elemen html) <br>
+        3. document.getElementById().style.property (mengubah atau menambah css style pada elemen html)
+    </p>
+    <div class="paragraftiga" id="paragraftiga">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque debitis deleniti laudantium nihil qui aliquam reprehenderit quod, non suscipit modi harum similique expedita quisquam quo! Maiores ipsum aut sequi fugit.
+    </div>
+    <img id="imgUser" src="user-ikon.png" width="100px" ><br>
+    <button onclick="runFunction()">Klik Saya</button>
+
+<body>
+    <!-- PENULISAN JS DI HTML -->
+    <!-- <script>
+        alert('HALO JS');
+    </script> -->
+    <script>
+
+        function runFunction(){
+
+            document.getElementById('paragraftiga').innerHTML = "Java Script";
+
+            document.getElementById('imgUser').src = "new-user.png";
+
+            document.getElementById('paragraf').style.color = "purple";
+
+        }
+
+    </script>
+    
+</body>
+
+</html>

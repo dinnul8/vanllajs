@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MENGAMBIL FILE JS -->
+    <script src="part4.js"></script>
+</head>
+
+    <p class="paragraf" id="paragraf">
+        {} DOM {}<br>
+        DOM adalah singkatan dari Document Object Model. 
+        DOM JavaScript adalah interface yang memungkinkan developer memanipulasi halaman web dari segi struktur, tampilan, dan kontennya 
+    </p>
+    <p class="paragrafdua" id="paragrafdua">
+        - menambah dan menghapus elemnt html <br>
+        Syntax apa saja yang kita gunakan?<br>
+        1. document.createElement() [untuk membuat element baru]<br>
+        2. document.appendChild() [untuk menyisipkan elemen ke elemen lain]<br>
+        3. document.removeChild() [untuk menghapus elemen]
+    </p>
+
+    <h1>Daftar Jadwal</h1>
+    <ul id="Jadwal"></ul>
+
+    <button onclick="runFunction()">Klik Saya</button>
+
+    <h1>Resep Nasi Goreng</h1>
+    <ul id="Resep">
+        <li>Nasi</li>
+        <li>Minyak</li>
+        <li>Kecap</li>
+        <li>Bumbu Racik Nasi Goreng</li>
+        <li>Seledri</li>
+        <li>Bawang</li>
+    </ul>
+
+    <button onclick="hapusResep()">Hapus</button>
+
+<body>
+    <!-- PENULISAN JS DI HTML -->
+    <!-- <script>
+        alert('HALO JS');
+    </script> -->
+
+    <script>
+
+        function runFunction(){
+
+            let list = document.createElement('li');
+            let text = document.createTextNode('jadwal baru')
+            list.appendChild(text);
+
+            document.getElementById('Jadwal').appendChild(list)
+        }
+
+        function hapusResep(){
+            let resep = document.getElementById('Resep');
+            resep.removeChild(resep.lastChild);
+        }
+
+    </script>
+    
+</body>
+
+</html>

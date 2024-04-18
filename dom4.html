@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MENGAMBIL FILE JS -->
+    <script src="part4.js"></script>
+</head>
+
+    <p class="paragraf" id="paragraf">
+        {} DOM {}<br>
+        DOM adalah singkatan dari Document Object Model. 
+        DOM JavaScript adalah interface yang memungkinkan developer memanipulasi halaman web dari segi struktur, tampilan, dan kontennya 
+    </p>
+    <p class="paragrafdua" id="paragrafdua">
+        Event DOM di JavaScript adalah jenis event yang terjadi pada elemen-elemen DOM (Document Object Model) di halaman web. Ini berarti, ketika pengguna berinteraksi dengan elemen-elemen HTML seperti tombol, input, atau elemen lainnya, atau ketika halaman web dimuat, event-event ini dipicu. Berikut adalah beberapa contoh event DOM umum: <br>
+        onclick: Terjadi saat pengguna mengklik sebuah elemen.
+    </p>
+    <p class="paragraftiga" id="paragraftiga">
+        Javascript DOM Event dan Event Listener <br>
+        Event Listener adalah mekanisme di JavaScript yang memungkinkan kita untuk "mendengarkan" atau "menyimak" suatu event tertentu pada elemen DOM, dan menentukan tindakan atau fungsi yang harus dijalankan saat event tersebut terjadi. c
+        contoh yaitu pada saat button di click (button onclick="namafungsi())
+    </p>
+
+    <button onclick="alert('Contoh Event DOM')">Klik Saya</button>
+    <button id="myButton" onclick="runFunction()">Klik Saya</button>
+
+<body>
+    <!-- PENULISAN JS DI HTML -->
+    <!-- <script>
+        alert('HALO JS');
+    </script> -->
+
+    <script>
+
+        function runFunction(){
+
+        // Mendapatkan referensi elemen HTML dengan ID "myButton"
+        var myButton = document.getElementById("myButton");
+
+        // Menambahkan event listener untuk event 'click'
+        myButton.addEventListener("click", function() {
+            // Kode yang akan dijalankan saat tombol diklik
+            alert("Contoh Event Listener DOM");
+        });
+
+        }
+
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MENGAMBIL FILE JS -->
+    <script src="part4.js"></script>
+</head>
+
+    <p class="paragraf" id="paragrafsatu">
+        {} DOM {} <br>
+        DOM adalah singkatan dari Document Object Model. 
+        DOM JavaScript adalah interface yang memungkinkan developer memanipulasi halaman web dari segi struktur, tampilan, dan kontennya
+    </p>
+    <p class="paragraf" id="paragrafdua">
+        - untuk melakukan dom dengan hmtl kalian dapat mengakses dengan cara :<br>
+        1. document.getElementById (mengakses elemen html dari id nya)<br>
+        2. document.getElementsByTagName (mengakses elemen html dari tag)<br>
+        3. document.getElementsByClassName (mengakses elemen html dari nama class)
+    </p>
+    <div class="paragraftiga" id="paragraftiga">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque debitis deleniti laudantium nihil qui aliquam reprehenderit quod, non suscipit modi harum similique expedita quisquam quo! Maiores ipsum aut sequi fugit.
+    </div>
+    <button onclick="runFunction()">Klik Saya</button>
+
+<body>
+    <!-- PENULISAN JS DI HTML -->
+    <!-- <script>
+        alert('HALO JS');
+    </script> -->
+    <script>
+
+        function runFunction(){
+
+            document.getElementsByTagName('p')[0].style.color = "green";
+
+            document.getElementById('paragrafdua').style.color = "yellow";
+
+            document.getElementById('paragraftiga').style.color = "red";
+
+        }
+
+        // function runFunction(){
+        //     let element = document.getElementsByTagName('p')
+        //     for (let index = 0; index < element.length; index++) {
+        //         element[index].style.color = "blue"
+        //     }
+        // }
+
+    </script>
+    
+</body>
+
+</html>
