@@ -1,28 +1,72 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman List Responsif</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    h1 {
+    text-align: center;
+    }
+
+    .list {
+    list-style: none;
+    padding: 0;
+    }
+
+    .list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+
+    .list li:hover {
+    background-color: #ddd;
+    }
+
+    @media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    }
+  </style>
 </head>
 <body>
-    <p>
-        struktur & detail pembelajaran berdasarkan file
-
-        # part1.js : Javascript Fundamentals - Variable, backtick string concat, type conversion
-        # part2.js : Javascript Fundamentals - if else conditional (pengkondisian) 
-        # part3.js : Javascript Fundamentals - DOM (Document Object Model) dengan file html [dom1-dom4.html]
-        # part4.js : Javascript Fundamentals - Array
-        # part5.js : Javascript Fundamentals - Operator 
-        # part6.js : Javascript Fundamentals - For dan While Looping (Perulangan) dengan file html [loop.html]
-        # part7.js : Javascript Fundamentals - 
-        # part8.js : Javascript Fundamentals - 
-        # part9.js : Javascript Fundamentals - 
-        # part10.js : Javascript Fundamentals - 
-        # part11.js : Javascript Fundamentals - 
-        # part12.js : Javascript Fundamentals - 
-    </p>
+  <div class="container">
+    <h1>Struktur & Detail Pembelajaran Berdasarkan File</h1>
+    <ul class="list">
+      <li># part1.js : Javascript Fundamentals - Variable, tipe data,backtick string concat, type conversion</li>
+      <li># part2.js : Javascript Fundamentals - if else conditional (pengkondisian)</li>
+      <li># part3.js + dom1-dom4.html : Javascript Fundamentals - DOM (Document Object Model)</li>
+      <li># part4.js : Javascript Fundamentals - Array</li>
+      <li># part5.js : Javascript Fundamentals - Operator </li>
+      <li># part6.js + loop.html : Javascript Fundamentals - For dan While Looping (Perulangan)</li>
+      <li># part7.js + function.html : Javascript Fundamentals - Function Declaration & Expression</li>
+      <li># part8.js : Javascript Fundamentals - Objek dan Metode</li>
+      <li># part9.js : Javascript Fundamentals - Asynchronous Programming Pemahaman </li>
+      <!-- next -->
+      <li># part10.js : Javascript Fundamentals - Callbacks Functions </li>
+      <li># part11.js : Javascript Fundamentals - Promise </li>
+      <li># part12.js : Javascript Fundamentals - Inheritance </li>
+      <li># part13.js : Javascript Fundamentals - Error Handling</li>
+      <li># part14.js : Javascript Fundamentals - Modules System</li>
+    </ul>
+  </div>
 </body>
 </html>
+

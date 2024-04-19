@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="part7.js" ></script>
+</head>
+<body onload="loadFuction">
+    <button onclick="menyapa('din')">Klik Untuk Menyapa</button>
+    <button onclick="menyapa('den')">Klik Untuk Menyapa</button>
+    <button onclick="menyapa('don')">Klik Untuk Menyapa</button>
+    <script>
+        function loadFuction() {
+            console.log("Selamat Pagi");
+        }
+        function menyapa(namaorang) {
+            console.log("Selamat Pagi " + namaorang);
+        }
+
+        // Function dengan dua parameter + menggunakan function return
+        function HitungPersegiPanjang(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        console.log(HitungPersegiPanjang(6, 9)); // Output: 54
+    </script>
+</body>
+</html>
